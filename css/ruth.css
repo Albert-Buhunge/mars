@@ -1,95 +1,184 @@
-
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
-  background-color: #cdc1fa;
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    background-color: #faf8fa;
+  }
+  
+  a {
+    color: #149ddd;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    }
+      
+
+#container{
+	width:1000px;
+	margin:0 auto;
+
+  
+  position: fixed;
 }
 
-a {
-  color: #149ddd;
+#navigation{
+	height:60px;
+	
+	margin-top: 9px;
+    
+    margin-left: 300px;
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+ul#navmenu{
+	font-style:20px;
+	list-style-type:none;
+	
+}
+ul#navmenu li{
+	width:100px;
+	text-align:center;
+	float:left;
+	margin-right:50px;
+}
+ul#navmenu a{
+	text-decoration:none;
+	color:white;
+	display:block;
+	width:200px;
+	
+}
+#header {
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom:0;
+    width: 100px;
+    padding:15px;
+    background: #040b14;
+    overflow: hidden;
+    
+  }
+  #main {
+    margin-left: 300px;
+    margin-right: 200px;
+  
+  }
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("img/profile.jpg")  top center;
+    background-size: cover;
+  }
+  
+  
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  .skills .progress {
+    height: 50px;
+    display: block;
+    background: none;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+  
+  .skills .progress-bar-wrap {
+    background: #dce8f8;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #149ddd;
   }
 
-#header {
-  position: fixed;
-  top: 20;
-  left:0;
-  bottom:0;
-  width: 120px;
-  padding:15px;
-  background: #040b14;
-  overflow-y: auto;
+
+
+  .footer-distributed {
+    background-color: #242c35;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+
+
+  .footer-distributed .footer-left p {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+
+
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+
+  
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
 }
-
-#main {
-  margin-left: 300px;
-  margin-right: 200px;
-
-}
-
-
-
-
-#hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/profile.jpg")  top center;
-  background-size: cover;
-}
-
-
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-}
-
-#hero p {
-  color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-}
-
-
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #149ddd;
-}
-
-
-
-
